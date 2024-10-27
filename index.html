@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Soar - Seamless Trip Planning</title>
-
-<link rel="icon" href="images/favicon.png" type="image/png">
-  
   <style>
     * {
       margin: 0;
@@ -19,22 +16,6 @@
       background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
-    }
-    nav {
-      background-color: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.1em;
-      padding: 10px;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ff5a5f;
     }
     header {
       background-color: #ff5a5f;
@@ -66,6 +47,7 @@
       padding: 60px 20px;
       max-width: 1200px;
       margin: 0 auto;
+      text-align: center;
     }
     .features {
       display: flex;
@@ -85,28 +67,62 @@
     .feature-box h3 {
       margin-bottom: 20px;
     }
-    .testimonial-section {
-      background-color: #fff;
+    .video-section {
+      background-color: #f1f1f1;
       padding: 60px 20px;
       text-align: center;
     }
-    .testimonial-section h2 {
-      margin-bottom: 40px;
+    .video-section video {
+      width: 80%;
+      height: auto;
+      border: none;
+    }
+    .testimonials {
+      background: #fff;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
     .testimonial {
-      max-width: 800px;
-      margin: 0 auto 30px;
+      margin: 20px 0;
+      font-style: italic;
+    }
+    .signup-section {
+      margin-top: 30px;
       padding: 20px;
-      background-color: #f1f1f1;
-      border-radius: 10px;
+      background: #f7f7f7;
+      border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .testimonial p {
-      font-style: italic;
+    .signup-section h3 {
       margin-bottom: 10px;
     }
-    .testimonial h4 {
-      color: #ff5a5f;
+    .signup-section form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .signup-section input[type="email"] {
+      padding: 10px;
+      font-size: 1em;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .signup-section button {
+      background: #ff5a5f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .signup-section button:hover {
+      background: #e04848;
     }
     footer {
       background: #333;
@@ -135,71 +151,58 @@
 </head>
 <body>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-    <a href="#signup">Sign Up</a>
-  </nav>
-
-  <header id="about">
+  <header>
     <h1>Soar</h1>
     <p>Seamless trip planning, all in one place.</p>
     <button class="cta-btn" onclick="alert('Sign up coming soon!')">Get Started</button>
   </header>
 
-  <section id="features">
+  <section>
     <h2>Plan, Collaborate, and Explore</h2>
     <p>With Soar, you can effortlessly plan your next adventure. Edit itineraries in real time, video chat with your travel group, and manage travel logistics without the hassle of switching between multiple apps.</p>
 
     <div class="features">
       <div class="feature-box">
-        <h3>Edit Itineraries Together</h3>
-        <p>Collaboratively update travel plans in real time, ensuring everyone stays in sync.</p>
+        <h3>Edit Itineraries</h3>
+        <p>Customize plans with ease.</p>
       </div>
       <div class="feature-box">
-        <h3>Video Chat Inside the Platform</h3>
-        <p>Connect with your friends and travel partners via integrated video calls.</p>
+        <h3>Video Chat</h3>
+        <p>Connect with friends while planning.</p>
       </div>
       <div class="feature-box">
-        <h3>Manage All Logistics</h3>
-        <p>Keep track of bookings, travel details, and transportation all in one place.</p>
+        <h3>Streamlined Logistics</h3>
+        <p>Coordinate all travel details efficiently.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Collaborative Planning</h3>
+        <p>Work together effortlessly on trip plans.</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonial-section">
-    <h2>What Our Customers Are Saying</h2>
-    
-    <div class="testimonial">
-      <p>"Soar made our group trip planning so much easier. We could all collaborate on the itinerary without sending endless emails and texts!"</p>
-      <h4>- Sarah, Travel Enthusiast</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"Having everything in one place made planning stress-free. The video chat feature is a game-changer for remote trip planning!"</p>
-      <h4>- Mike, Frequent Traveler</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>"The platform is intuitive, and managing logistics is a breeze. It saved me hours of coordination with my friends."</p>
-      <h4>- Emily, Adventure Seeker</h4>
-    </div>
-
-  </section>
-
-  <section id="signup" class="video-section">
+  <section class="video-section">
     <h2>See Soar in Action</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Soar Product Demo"></iframe>
-    <p>Sign up for early access and be the first to try Soar!</p>
-    <button class="cta-btn" onclick="alert('Thank you for signing up! We’ll notify you when we launch.')">Sign Up</button>
+    <video controls>
+      <source src="https://maddiebatch.github.io/soar-landing-page/Soar%20intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions? Reach out to our team at <a href="mailto:info@soar.com">info@soar.com</a>.</p>
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial">"Soar made planning our group trip so easy! We were all on the same page, and it felt seamless!" - Sarah L.</div>
+    <div class="testimonial">"The video chat feature is a game changer. We could plan everything without the hassle of other apps!" - John D.</div>
+    <div class="testimonial">"I love how I can customize the itinerary with my friends. It made our trip unforgettable!" - Emma W.</div>
+
+    <div class="signup-section">
+      <h3>Be the First to Experience Soar</h3>
+      <p>Sign up with your email to be one of our first users!</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" onclick="alert('Thank you for signing up!')">Sign Up</button>
+      </form>
+    </div>
   </section>
 
   <footer>
@@ -208,3 +211,4 @@
 
 </body>
 </html>
+
